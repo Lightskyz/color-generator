@@ -1,0 +1,26 @@
+body {
+    background-color: #f6f6f6;
+    color: $black;
+    text-align: left;
+    margin: auto;
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    a {
+        font-weight: bold;
+        color: $white;
+        text-decoration: none;
+    }
+    label,
+    h5 {
+        text-align: left;
+    }
+    label {
+        font-size: .9rem;
+    }
+    .btn {
+        margin: 10px auto;
+        display: block;
+    }
+}

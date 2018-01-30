@@ -1,0 +1,30 @@
+@each $category in tbo,
+media,
+science,
+record,
+quick,
+history {
+    #picker_bckgrd_#{$category} {
+        margin: 0;
+        padding: 0px 10px;
+        width: 150px;
+        height: 30px;
+        border: 2px solid #f6f6f6;
+        border-right: 40px solid #f6f6f6;
+        line-height: 30px;
+    }
+    #picker_color_#{$category} {
+        margin: 0;
+        padding: 0px 10px;
+        width: 150px;
+        height: 30px;
+        border: 2px solid #112049;
+        border-right: 40px solid #112049;
+        line-height: 30px;
+    }
+    #block_#{$category} {
+        display: inline-block;
+        width: auto;
+        font-family: Arial;
+    }
+}

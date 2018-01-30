@@ -1,0 +1,22 @@
+h1 PatientHM - Colors
+
+mixin color-card(category_name, category_id, bckgrd_id, text_id)
+	.col
+		.color-card
+			div(id="block_" + category_id)
+				h5= category_name
+			.form-group
+				label(for="bckgrd") Background Color
+				input(name="bckgrd", type="text", value="#f6f6f6", id= bckgrd_id).form-control
+			.form-group
+				label(for="text") Text Color
+				input(name="text",type="text", value="#112049", id= text_id).form-control
+
+.container-fluid
+	.row
+		+color-card("The Brain Observatory", "tbo", "picker_bckgrd_tbo", "picker_color_tbo")
+		+color-card("Media & News", "media", "picker_bckgrd_media", "picker_color_media")
+		+color-card("Science", "science", "picker_bckgrd_science", "picker_color_science")
+		+color-card("For the Record", "record", "picker_bckgrd_record", "picker_color_record")
+		+color-card("Quick", "quick", "picker_bckgrd_quick", "picker_color_quick")
+		+color-card("History", "history", "picker_bckgrd_history", "picker_color_history")
